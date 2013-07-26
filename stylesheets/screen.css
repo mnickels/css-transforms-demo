@@ -1,0 +1,105 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen.scss */
+* {
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+/* line 13, ../sass/screen.scss */
+div {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* line 21, ../sass/screen.scss */
+#width {
+  -webkit-transition-property: width;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  transition-property: width;
+}
+/* line 23, ../sass/screen.scss */
+#width:hover {
+  width: 140px;
+}
+
+/* line 28, ../sass/screen.scss */
+#width-and-height {
+  -webkit-transition-property: width, height;
+  -moz-transition-property: width, height;
+  -o-transition-property: width, height;
+  transition-property: width, height;
+}
+/* line 30, ../sass/screen.scss */
+#width-and-height:hover {
+  width: 140px;
+  height: 120px;
+}
+
+/* line 36, ../sass/screen.scss */
+#color {
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+}
+/* line 38, ../sass/screen.scss */
+#color:hover {
+  background-color: green;
+}
+
+/* line 43, ../sass/screen.scss */
+#rotate {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 45, ../sass/screen.scss */
+#rotate:hover {
+  -webkit-transform: rotate(70deg);
+  -moz-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  -o-transform: rotate(70deg);
+  transform: rotate(70deg);
+}
+
+/* line 50, ../sass/screen.scss */
+#translate {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  -o-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/* line 54, ../sass/screen.scss */
+#translate:hover {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}

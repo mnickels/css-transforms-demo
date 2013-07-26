@@ -1,0 +1,57 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+
+* {
+	@include transition-duration(2s);
+	@include transition-timing-function(ease);
+}
+
+div {
+	width: 80px;
+	height: 80px;
+	background-color: blue;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+#width {
+	@include transition-property(width);
+	&:hover {
+		width: 140px;
+	}
+}
+
+#width-and-height {
+	@include transition-property(width,height);
+	&:hover {
+		width: 140px;
+		height: 120px;
+	}
+}
+
+#color {
+	@include transition-property(background-color);
+	&:hover {
+		background-color: green;
+	}
+}
+
+#rotate {
+	@include rotate(0deg);
+	&:hover {
+		@include rotate(70deg);
+	}
+}
+
+#translate {
+	@include rotateY(0);
+	@include transform-style(preserve-3d);
+    @include backface-visibility(visible);
+    &:hover {
+		@include rotateY(180deg);
+	}
+}
